@@ -3,134 +3,215 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Razi Abbas — VMware Engineer, professionally uptime-obsessed</title>
-<meta name="description" content="Razi Abbas — VMware System Administrator and Wintel Engineer with 4 years of experience in vSphere, vSAN, NSX and Nutanix.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<title>Razi Abbas — VMware, Wintel and Nutanix Engineer</title>
+<meta name="description" content="Razi Abbas — VMware System Administrator and Wintel Engineer with 4 years of experience in vSphere, vSAN, NSX, Nutanix, Windows Server and Linux.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-:root{--bg:#0f1512;--bg2:#161e1a;--ink:#e9f0e7;--mute:#93a39a;--line:#26332c;--acc:#9be58a;--hot:#f2b85b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark}}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f6f1;--bg2:#e6ece3;--ink:#16211b;--mute:#566a5e;--line:#cdd9cb;--acc:#1d7a3a;--hot:#a8620a}}
-:root[data-theme="dark"]{color-scheme:dark}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+:root{--bg:#07070d;--bg2:#0f0f1a;--ink:#f4f4fb;--mute:#9b9bb6;--line:#24243b;--a:#b8ff2c;--b:#ff2d95;--c:#19e3ff;--d:#ffb01f;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07070d;--bg2:#0f0f1a;--ink:#f4f4fb;--mute:#9b9bb6;--line:#24243b;--a:#b8ff2c;--b:#ff2d95;--c:#19e3ff;--d:#ffb01f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#07070d;--bg2:#0f0f1a;--ink:#f4f4fb;--mute:#9b9bb6;--line:#24243b;--a:#b8ff2c;--b:#ff2d95;--c:#19e3ff;--d:#ffb01f;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Bricolage Grotesque",system-ui,sans-serif;overflow-x:hidden}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Space Grotesk",system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
 a{color:inherit}
-.m{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.02em}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
-nav b{font-weight:800;font-size:18px}nav b i{color:var(--acc);font-style:normal}
+.m{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.03em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,7,13,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+nav b{font-weight:700;font-size:19px}nav b i{color:var(--b);font-style:normal}
 nav div a{margin-left:18px;text-decoration:none;color:var(--mute);font-size:15px}
-nav div a:hover{color:var(--acc)}
-@media(max-width:560px){nav div a:not(.hi){display:none}}
-.hero{padding:64px 0 48px}
-.chip{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:99px;padding:5px 12px;color:var(--mute)}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--acc);animation:p 2s infinite}
-@keyframes p{50%{opacity:.25}}
-h1{font-size:clamp(44px,9vw,92px);line-height:.98;letter-spacing:-.035em;font-weight:800;margin:22px 0 18px}
-h1 em{font-style:normal;color:var(--acc)}
-.lead{max-width:560px;color:var(--mute);font-size:19px}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
-.btn{padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line)}
-.btn.p{background:var(--acc);color:#0f1512;border-color:var(--acc)}
-.panel{margin-top:40px;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px}
+nav div a:hover{color:var(--a)}
+nav div a.hi{color:#07070d;background:var(--a);padding:7px 14px;border-radius:99px;font-weight:700}
+@media(max-width:700px){nav div a:not(.hi){display:none}}
+.hero{position:relative;overflow:hidden;padding:56px 0 44px}
+.hero:before{content:"";position:absolute;width:560px;height:560px;right:-160px;top:-180px;background:radial-gradient(circle,rgba(255,45,149,.38),transparent 65%);animation:glow 7s ease-in-out infinite alternate}
+.hero:after{content:"";position:absolute;width:520px;height:520px;left:-200px;bottom:-260px;background:radial-gradient(circle,rgba(25,227,255,.28),transparent 65%)}
+@keyframes glow{to{transform:scale(1.15);opacity:.7}}
+.hg{position:relative;z-index:1;display:grid;gap:36px;align-items:center}
+@media(min-width:860px){.hg{grid-template-columns:1.2fr .8fr}}
+.chip{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--a);border-radius:99px;padding:5px 13px;color:var(--a)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--a);box-shadow:0 0 10px var(--a);animation:p 1.8s infinite}
+@keyframes p{50%{opacity:.3}}
+h1{font-size:clamp(44px,8.6vw,88px);line-height:.98;letter-spacing:-.04em;font-weight:700;margin:22px 0 18px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--a),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:580px;color:var(--mute);font-size:19px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
+.btn{padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:700;border:1px solid var(--line);transition:transform .15s}
+.btn:hover{transform:translateY(-2px);border-color:var(--c);color:var(--c)}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--c));color:#07070d;border:0;box-shadow:0 8px 30px rgba(184,255,44,.25)}
+.btn.p:hover{color:#07070d}
+.pw{order:-1;display:flex;justify-content:center}
+@media(min-width:860px){.pw{order:0}}
+.ph{position:relative;width:min(78%,310px);aspect-ratio:4/5;border-radius:28px;padding:3px;background:conic-gradient(from 140deg,var(--a),var(--b),var(--c),var(--a));box-shadow:0 0 60px rgba(255,45,149,.35)}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;border-radius:25px;display:block}
+.fl{position:absolute;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:5px 11px;color:var(--ink);white-space:nowrap}
+.fl.f1{left:-14px;top:14%;border-color:var(--a);color:var(--a)}
+.fl.f2{right:-14px;top:46%;border-color:var(--b);color:var(--b)}
+.fl.f3{left:10%;bottom:-14px;border-color:var(--c);color:var(--c)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px;position:relative;z-index:1}
+.stat{padding:14px 0 0;border-top:2px solid var(--a)}
+.stat:nth-child(2){border-color:var(--b)}.stat:nth-child(3){border-color:var(--c)}.stat:nth-child(4){border-color:var(--d)}
+.stat b{display:block;font-size:36px;line-height:1.1;letter-spacing:-.02em}
+.stat span{color:var(--mute);font-size:15px}
+.panel{margin-top:34px;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:18px;position:relative;z-index:1}
 .panel header{display:flex;justify-content:space-between;color:var(--mute);margin-bottom:12px;gap:10px;flex-wrap:wrap}
-.hosts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
-.host{border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--bg)}
+.panel header span+span{color:var(--a)}
+.hosts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.host{border:1px solid var(--line);border-radius:10px;padding:10px;background:var(--bg)}
 .host span{display:block;color:var(--mute)}
-.host strong{color:var(--acc);font-weight:500}
-.bar{height:5px;border-radius:3px;background:var(--line);margin-top:8px;overflow:hidden}
-.bar i{display:block;height:100%;background:var(--acc);border-radius:3px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:14px}
-.stat{padding:12px 0;border-top:2px solid var(--acc)}
-.stat b{display:block;font-size:34px;line-height:1.1;letter-spacing:-.02em}
-.tick{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:12px 0;color:var(--mute)}
-.tick div{display:inline-block;animation:t 28s linear infinite}
-.tick span{margin:0 18px}.tick span:nth-child(even){color:var(--hot)}
+.host strong{font-weight:500}
+.host .bar{height:5px;border-radius:3px;background:var(--line);margin-top:8px;overflow:hidden}
+.host .bar i{display:block;height:100%;border-radius:3px;animation:fill 1.6s ease-out both}
+@keyframes fill{from{width:0!important}}
+.tick{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:13px 0;color:var(--mute);background:var(--bg2)}
+.tick div{display:inline-block;animation:t 30s linear infinite}
+.tick span{margin:0 20px}.tick span:nth-child(3n+1){color:var(--a)}.tick span:nth-child(3n+2){color:var(--c)}.tick span:nth-child(3n){color:var(--b)}
 @keyframes t{to{transform:translateX(-50%)}}
-section{padding:72px 0 8px}
-h2{font-size:clamp(32px,6vw,52px);line-height:1.05;letter-spacing:-.03em;margin:8px 0 14px}
-h2+p{color:var(--mute);max-width:560px;margin-top:0}
-.about{display:grid;gap:30px;grid-template-columns:1fr}
-@media(min-width:800px){.about{grid-template-columns:1.2fr .8fr}}
-blockquote{margin:0;padding:18px 20px;border-left:3px solid var(--hot);background:var(--bg2);border-radius:0 12px 12px 0;font-size:20px;line-height:1.35}
-blockquote small{display:block;margin-top:10px;color:var(--mute)}
-.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:26px}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:20px}
-.card h3{margin:6px 0 8px;font-size:22px;line-height:1.2}
+section{padding:78px 0 6px}
+.k{color:var(--b)}
+h2{font-size:clamp(32px,6vw,54px);line-height:1.04;letter-spacing:-.035em;margin:8px 0 14px}
+h2+p{color:var(--mute);max-width:600px;margin-top:0}
+.about{display:grid;gap:30px}
+@media(min-width:820px){.about{grid-template-columns:1.1fr .9fr}}
+.term{background:#05050a;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.term header{display:flex;gap:7px;padding:11px 14px;background:var(--bg2);border-bottom:1px solid var(--line)}
+.term header i{width:11px;height:11px;border-radius:50%;background:var(--b)}.term header i:nth-child(2){background:var(--d)}.term header i:nth-child(3){background:var(--a)}
+.term pre{margin:0;padding:16px;color:var(--ink);line-height:1.7;overflow-x:auto;white-space:pre-wrap}
+.term .p1{color:var(--a)}.term .o{color:var(--c)}
+blockquote{margin:18px 0 0;padding:16px 20px;border-left:3px solid var(--d);background:var(--bg2);border-radius:0 12px 12px 0;font-size:20px;line-height:1.35}
+blockquote small{display:block;margin-top:8px;color:var(--mute)}
+.arch{margin-top:28px;display:grid;gap:8px}
+.lyr{display:grid;gap:8px;grid-template-columns:130px 1fr;align-items:stretch}
+@media(max-width:620px){.lyr{grid-template-columns:1fr}}
+.lyr>b{display:flex;align-items:center;padding:10px 14px;border-radius:10px;font-weight:700;font-size:14px;color:#07070d}
+.lyr:nth-child(1)>b{background:var(--d)}.lyr:nth-child(2)>b{background:var(--a)}.lyr:nth-child(3)>b{background:var(--c)}.lyr:nth-child(4)>b{background:var(--b)}.lyr:nth-child(5)>b{background:var(--a)}.lyr:nth-child(6)>b{background:var(--d)}
+.lyr div{display:flex;flex-wrap:wrap;gap:8px;border:1px solid var(--line);background:var(--bg2);border-radius:10px;padding:8px 10px}
+.lyr em{font-style:normal;padding:3px 10px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--ink)}
+.lyr em.v{border-color:var(--c);color:var(--c)}.lyr em.n{border-color:var(--b);color:var(--b)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));margin-top:26px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:20px;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--a)}
+.card h3{margin:6px 0 8px;font-size:21px;line-height:1.2}
 .card p{margin:0 0 14px;color:var(--mute);font-size:16px}
-.tag{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 8px;margin:0 6px 6px 0;color:var(--mute)}
-.card .k{color:var(--hot)}
-.log{margin-top:26px;border-left:2px solid var(--line);padding-left:22px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 9px;margin:0 6px 6px 0;color:var(--mute)}
+.card .k{color:var(--b)}
+.lv{float:right;border-radius:99px;padding:2px 10px;color:#07070d;font-weight:500}
+.lv.c{background:var(--a)}.lv.w{background:var(--c)}.lv.f{background:var(--d)}
+.card.hl{border-color:var(--b);box-shadow:0 0 30px rgba(255,45,149,.15)}
+.steps{counter-reset:s;display:grid;gap:12px;margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.step{counter-increment:s;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px;border-top:3px solid var(--a)}
+.step:nth-child(2){border-top-color:var(--c)}.step:nth-child(3){border-top-color:var(--b)}.step:nth-child(4){border-top-color:var(--d)}
+.step:before{content:"0" counter(s);font-family:"JetBrains Mono",monospace;color:var(--a);font-size:13px}
+.step h3{margin:4px 0 6px;font-size:19px}.step p{margin:0;color:var(--mute);font-size:15px}
+.log{margin-top:26px;border-left:2px solid var(--line);padding-left:24px}
 .row{position:relative;padding-bottom:30px}
-.row:before{content:"";position:absolute;left:-29px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--acc)}
-.row.now:before{background:var(--acc)}
+.row:before{content:"";position:absolute;left:-32px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--b)}
+.row.now:before{background:var(--a);border-color:var(--a);box-shadow:0 0 12px var(--a)}
 .row h3{margin:2px 0;font-size:23px}
-.row .co{color:var(--hot)}
+.row .co{color:var(--c)}
 .row ul{margin:10px 0;padding-left:18px;color:var(--mute);font-size:16px}
 .row li{margin-bottom:4px}
-.certs{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:24px}
-.cert{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--bg2)}
-.cert i{flex:none;width:38px;height:38px;border-radius:9px;background:var(--acc);color:#0f1512;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:13px}
-.cert b{display:block;line-height:1.25}.cert span{color:var(--mute)}
-.contact{margin:72px 0 0;padding:64px 0;border-top:1px solid var(--line);text-align:left}
-.mail{display:inline-block;font-size:clamp(20px,4.6vw,38px);font-weight:800;letter-spacing:-.02em;color:var(--acc);text-decoration:none;word-break:break-all;border-bottom:2px solid var(--acc)}
+.certs{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:24px}
+.cert{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--bg2)}
+.cert i{flex:none;width:42px;height:42px;border-radius:10px;background:var(--a);color:#07070d;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:13px}
+.cert:nth-child(2n) i{background:var(--c)}.cert:nth-child(3n) i{background:var(--b)}.cert:nth-child(4n) i{background:var(--d)}
+.cert b{display:block;line-height:1.25}.cert span{color:var(--mute);font-size:14px}
+.contact{margin:78px 0 0;padding:70px 0;border-top:1px solid var(--line);background:linear-gradient(180deg,transparent,rgba(255,45,149,.09))}
+.mail{display:inline-block;font-size:clamp(20px,4.6vw,38px);font-weight:700;letter-spacing:-.02em;color:var(--a);text-decoration:none;word-break:break-all;border-bottom:2px solid var(--a)}
 .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
 footer{border-top:1px solid var(--line);padding:22px 0 30px;color:var(--mute)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-:focus-visible{outline:2px solid var(--hot);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){.tick div,.dot{animation:none}html{scroll-behavior:auto}}
+:focus-visible{outline:2px solid var(--d);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.tick div,.dot,.hero:before,.host .bar i{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b id="top">razi<i>.</i>abbas</b><div class="m"><a href="#about">About</a><a href="#work">Field notes</a><a href="#stack">Toolbox</a><a href="#log">Changelog</a><a class="hi" href="#contact" style="color:var(--acc)">Say hello</a></div></div></nav>
+<nav><div class="wrap"><b id="top">razi<i>.</i>abbas</b><div class="m"><a href="#about">About</a><a href="#stack">Virtualization</a><a href="#skills">Skills</a><a href="#playbook">Playbook</a><a href="#log">Journey</a><a class="hi" href="#contact">Say hello</a></div></div></nav>
 
 <header class="hero"><div class="wrap">
-<span class="chip m"><span class="dot"></span>STATUS: IMMEDIATE JOINER</span>
+<div class="hg">
+<div>
+<span class="chip m"><span class="dot"></span>IMMEDIATE JOINER · OPEN TO ROLES</span>
 <h1>I keep your virtual machines <em>up.</em></h1>
-<p class="lead">VMware System Administrator and Wintel Engineer. I look after the hypervisors, clusters and storage that your applications quietly depend on, so nobody has to think about them.</p>
-<div class="btns"><a class="btn p" href="#contact">Let’s talk</a><a class="btn" href="#work">See the field notes</a></div>
+<p class="lead">VMware System Administrator and Wintel Engineer with 4 years across vSphere, vSAN, NSX and Nutanix. I look after the hypervisors, clusters, storage and servers your applications quietly depend on, so nobody has to think about them.</p>
+<div class="btns"><a class="btn p" href="#contact">Let’s talk</a><a class="btn" href="#stack">See how I think about virtualization</a></div>
+</div>
+<div class="pw"><div class="ph"><img src="data:image/jpeg;base64,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" alt="Portrait of Razi Abbas" width="251" height="321"><span class="fl f1 m">VMWARE</span><span class="fl f2 m">NUTANIX AHV</span><span class="fl f3 m">WINDOWS · LINUX</span></div></div>
+</div>
+
+<div class="stats">
+<div class="stat"><b>4 yrs</b><span>of VMware and Wintel work</span></div>
+<div class="stat"><b>2×</b><span>Nutanix certified</span></div>
+<div class="stat"><b>900k</b><span>YouTube community I grew</span></div>
+<div class="stat"><b>200+</b><span>tech videos planned, shot, edited</span></div>
+</div>
 
 <div class="panel">
-<header class="m"><span>CLUSTER / PRAYAGRAJ-DC01</span><span style="color:var(--acc)">HA ON · DRS ON · ALL HOSTS NOMINAL</span></header>
+<header class="m"><span>SAMPLE VIEW · CLUSTER / PRAYAGRAJ-DC01</span><span>HA ON · DRS ON · ALL HOSTS NOMINAL</span></header>
 <div class="hosts m">
-<div class="host"><span>esxi-01</span><strong>CONNECTED</strong><div class="bar"><i style="width:62%"></i></div></div>
-<div class="host"><span>esxi-02</span><strong>CONNECTED</strong><div class="bar"><i style="width:48%"></i></div></div>
-<div class="host"><span>esxi-03</span><strong>CONNECTED</strong><div class="bar"><i style="width:71%"></i></div></div>
-<div class="host"><span>vSAN</span><strong>HEALTHY</strong><div class="bar"><i style="width:55%"></i></div></div>
-</div>
-<div class="stats">
-<div class="stat"><b>4 yrs</b>of VMware and Wintel work</div>
-<div class="stat"><b>900k</b>YouTube community I grew</div>
-<div class="stat"><b>200+</b>videos planned, shot and edited</div>
+<div class="host"><span>esxi-01</span><strong style="color:var(--a)">CONNECTED</strong><div class="bar"><i style="width:62%;background:var(--a)"></i></div></div>
+<div class="host"><span>esxi-02</span><strong style="color:var(--a)">CONNECTED</strong><div class="bar"><i style="width:48%;background:var(--a)"></i></div></div>
+<div class="host"><span>ahv-01 · CVM</span><strong style="color:var(--c)">UP</strong><div class="bar"><i style="width:57%;background:var(--c)"></i></div></div>
+<div class="host"><span>vSAN</span><strong style="color:var(--b)">HEALTHY</strong><div class="bar"><i style="width:55%;background:var(--b)"></i></div></div>
 </div>
 </div>
 </div></header>
 
-<div class="tick m" aria-hidden="true"><div><span>VSPHERE</span><span>ESXI</span><span>VCENTER</span><span>VSAN</span><span>NSX</span><span>NUTANIX</span><span>WINDOWS SERVER</span><span>LINUX</span><span>ITILV4</span><span>VSPHERE</span><span>ESXI</span><span>VCENTER</span><span>VSAN</span><span>NSX</span><span>NUTANIX</span><span>WINDOWS SERVER</span><span>LINUX</span><span>ITILV4</span></div></div>
+<div class="tick m" aria-hidden="true"><div><span>VSPHERE</span><span>ESXI</span><span>VCENTER</span><span>VSAN</span><span>NSX</span><span>NUTANIX</span><span>AHV</span><span>PRISM</span><span>WINDOWS SERVER</span><span>ACTIVE DIRECTORY</span><span>LINUX</span><span>ILO · IDRAC</span><span>VSPHERE</span><span>ESXI</span><span>VCENTER</span><span>VSAN</span><span>NSX</span><span>NUTANIX</span><span>AHV</span><span>PRISM</span><span>WINDOWS SERVER</span><span>ACTIVE DIRECTORY</span><span>LINUX</span><span>ILO · IDRAC</span></div></div>
 
 <main class="wrap">
 <section id="about">
 <div class="about">
 <div>
-<h2>Steady systems. Curious human.</h2>
+<h2>Steady systems. <span class="k">Curious</span> human.</h2>
 <p>I’m Razi, a VMware engineer based in Prayagraj. Most recently I was a VMware Cloud Engineer II at Rackspace Technology, and before that I spent just over three years at Hewlett Packard Enterprise as a Technical Solution Consultant.</p>
-<p>My days are ESXi hosts, vCenter, vSAN, patching, certificates and the occasional P1 incident. I like environments that are secure, documented and boring in the best way.</p>
+<p>My days are ESXi hosts, vCenter, vSAN, Nutanix clusters, patching, certificates, hardware alerts and the occasional P1 incident. I like environments that are secure, documented and boring in the best way.</p>
 <p>I’m also finishing an MBA in IT and Finance, because good infrastructure decisions are business decisions too. And yes, I ran a tech YouTube channel for five years, so I can explain a datastore to a non-engineer without them glazing over.</p>
 </div>
+<div>
+<div class="term"><header><i></i><i></i><i></i></header><pre class="m"><span class="p1">razi@ops:~$</span> whoami
+<span class="o">vmware-admin · wintel-engineer · nutanix-certified</span>
+<span class="p1">razi@ops:~$</span> cat focus.txt
+<span class="o">availability · patching · migrations · RCA</span>
+<span class="p1">razi@ops:~$</span> uptime --pretty
+<span class="o">up 4 years in production infrastructure</span></pre></div>
 <blockquote>Snapshots are not backups.<small class="m">— EVERY VMWARE ADMIN, EVENTUALLY</small></blockquote>
+</div>
+</div>
+</section>
+
+<section id="stack">
+<span class="m k">THE STACK</span>
+<h2>Virtualization, explained simply.</h2>
+<p>One physical server runs many virtual machines. Here is how the layers fit together on both VMware and Nutanix, and where I work in each.</p>
+<div class="arch">
+<div class="lyr"><b>Workloads</b><div class="m"><em>Windows Server</em><em>RHEL</em><em>Ubuntu</em><em>Applications</em></div></div>
+<div class="lyr"><b>Hypervisor</b><div class="m"><em class="v">VMware ESXi</em><em class="n">Nutanix AHV</em></div></div>
+<div class="lyr"><b>Storage</b><div class="m"><em class="v">VMFS · vSAN</em><em class="n">Nutanix AOS (DSF)</em></div></div>
+<div class="lyr"><b>Network</b><div class="m"><em class="v">vSwitch · vDS · NSX</em><em class="n">Open vSwitch · VLANs</em></div></div>
+<div class="lyr"><b>Management</b><div class="m"><em class="v">vCenter · HA · DRS · vMotion</em><em class="n">Prism · CVM · NCC</em></div></div>
+<div class="lyr"><b>Hardware</b><div class="m"><em>Dell iDRAC</em><em>HPE iLO · OneView</em><em>BIOS / firmware</em><em>RAID · disks</em></div></div>
+</div>
+<div class="grid">
+<article class="card"><span class="tag m k">AVAILABILITY</span><h3>HA, DRS and vMotion</h3><p>HA restarts VMs when a host fails. DRS balances load across hosts. vMotion moves a running VM with no downtime. Together they make patching and failures routine.</p></article>
+<article class="card"><span class="tag m k">PROTECTION</span><h3>Snapshots are not backups</h3><p>A snapshot depends on its base disk and lives on the same datastore. It is a short-term safety net before a change, not a recovery plan.</p></article>
+<article class="card"><span class="tag m k">HCI</span><h3>vSAN and Nutanix AOS</h3><p>Hyperconverged infrastructure pools the local disks of every node into shared storage. Data is copied across nodes (FTT on vSAN, RF2 or RF3 on Nutanix), so a node failure does not lose data.</p></article>
+<article class="card"><span class="tag m k">UNDER THE HOOD</span><h3>Hardware still matters</h3><p>Disk, PSU, fan and memory faults show up as hypervisor alerts first. Reading iDRAC or iLO logs, firmware baselines and vendor cases is part of keeping clusters healthy.</p></article>
 </div>
 </section>
 
 <section id="work">
+<span class="m k">FIELD NOTES</span>
 <h2>What I handle day to day.</h2>
-<p>Real work from my time at Hewlett Packard Enterprise. No invented uptime numbers.</p>
+<p>Real work from my time at Hewlett Packard Enterprise and Rackspace. No invented uptime numbers.</p>
 <div class="grid">
 <article class="card"><span class="tag m k">PATCHING</span><h3>Patches without panic.</h3><p>ESXi and vCenter patching, upgrades, certificate renewals and snapshot management, planned so the cluster stays secure and stable.</p><span class="tag m">ESXI</span><span class="tag m">VCENTER</span><span class="tag m">CERTS</span></article>
 <article class="card"><span class="tag m k">MIGRATION</span><h3>Moving workloads safely.</h3><p>P2V and V2V migrations with VMware Converter, hot and cold vMotion, and storage migrations across VMFS datastores.</p><span class="tag m">VMOTION</span><span class="tag m">CONVERTER</span><span class="tag m">VMFS</span></article>
 <article class="card"><span class="tag m k">AVAILABILITY</span><h3>Clusters that fail gracefully.</h3><p>HA and DRS clusters, affinity and anti-affinity rules, disaster recovery configuration, and vSAN stretched cluster and ROBO setups.</p><span class="tag m">HA</span><span class="tag m">DRS</span><span class="tag m">VSAN</span></article>
 <article class="card"><span class="tag m k">INCIDENTS</span><h3>P1, handled calmly.</h3><p>Worked P1 incidents with cross-functional teams, troubleshooting snapshot, performance, network, storage and guest OS issues, then recommending fixes.</p><span class="tag m">TRIAGE</span><span class="tag m">RCA</span><span class="tag m">ITILV4</span></article>
-  
+<article class="card"><span class="tag m k">HARDWARE</span><h3>Servers, not just software.</h3><p>Hardware alerts, firmware and BIOS updates, HPE SPP upgrades, OneView monitoring and vendor cases for part replacement on ProLiant servers.</p><span class="tag m">ILO</span><span class="tag m">ONEVIEW</span><span class="tag m">IDRAC</span></article>
+<article class="card"><span class="tag m k">WINDOWS</span><h3>The Wintel side.</h3><p>Windows Server administration with Active Directory, Group Policy, DNS, DHCP, WSUS patching and failover clustering, including L2 support.</p><span class="tag m">AD</span><span class="tag m">GPO</span><span class="tag m">WSUS</span></article>
 <article class="card">
   <span class="tag m k">VM PERFORMANCE</span>
   <h3>Performance issues, solved.</h3>
@@ -202,51 +283,70 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   <span class="tag m">INCIDENTS</span>
   <span class="tag m">SLA</span>
 </article>
-
 </div>
 </section>
 
-<section id="stack">
-<h2>Tools I reach for.</h2>
+<section id="skills">
+<span class="m k">TOOLBOX</span>
+<h2>Skills, with honest levels.</h2>
 <p>The tool matters less than knowing what to check first when it misbehaves.</p>
 <div class="grid">
-<div class="card"><h3>Virtualization</h3><span class="tag m">VSPHERE</span><span class="tag m">ESXI</span><span class="tag m">VCENTER</span><span class="tag m">VSAN</span><span class="tag m">NSX</span><span class="tag m">NUTANIX</span></div>
-<div class="card"><h3>Operating systems</h3><span class="tag m">WINDOWS SERVER</span><span class="tag m">RHEL</span><span class="tag m">UBUNTU</span><span class="tag m">AD ROLES &amp; PERMISSIONS</span></div>
-<div class="card"><h3>Operations</h3><span class="tag m">PERFORMANCE MONITORING</span><span class="tag m">SECURITY HARDENING</span><span class="tag m">INCIDENT MGMT</span><span class="tag m">ITILV4</span></div>
-<div class="card"><h3>Learning next</h3><span class="tag m">JENKINS</span><span class="tag m">ANSIBLE</span><span class="tag m">KUBERNETES</span><span class="tag m">CI/CD</span></div>
+<div class="card"><span class="lv c m">CORE</span><h3>VMware</h3><span class="tag m">VSPHERE</span><span class="tag m">ESXI</span><span class="tag m">VCENTER</span><span class="tag m">VSAN</span><span class="tag m">NSX</span><span class="tag m">VCF</span><span class="tag m">HA / DRS</span><span class="tag m">P2V / V2V</span></div>
+<div class="card hl"><span class="lv w m">CERTIFIED 2×</span><h3>Nutanix</h3><span class="tag m">AOS</span><span class="tag m">AHV</span><span class="tag m">PRISM</span><span class="tag m">CVM</span><span class="tag m">RF2 / RF3</span><span class="tag m">NCC</span><span class="tag m">SNAPSHOTS</span></div>
+<div class="card hl"><span class="lv w m">WORKING</span><h3>Linux</h3><span class="tag m">RHEL</span><span class="tag m">UBUNTU</span><span class="tag m">SYSTEMCTL</span><span class="tag m">JOURNALCTL</span><span class="tag m">TOP · DF · FREE</span><span class="tag m">PATCHING</span><span class="tag m">USERS</span></div>
+<div class="card"><span class="lv c m">CORE</span><h3>Windows Server</h3><span class="tag m">2016 / 2019 / 2022</span><span class="tag m">ACTIVE DIRECTORY</span><span class="tag m">GPO</span><span class="tag m">DNS</span><span class="tag m">DHCP</span><span class="tag m">WSUS</span><span class="tag m">CLUSTERING</span></div>
+<div class="card"><span class="lv f m">FOUNDATIONAL</span><h3>Hardware</h3><span class="tag m">IDRAC</span><span class="tag m">ILO</span><span class="tag m">ONEVIEW</span><span class="tag m">RAID</span><span class="tag m">BIOS / FIRMWARE</span><span class="tag m">VENDOR CASES</span></div>
+<div class="card"><span class="lv c m">CORE</span><h3>Operations</h3><span class="tag m">ITIL V4</span><span class="tag m">INCIDENT</span><span class="tag m">PROBLEM</span><span class="tag m">CHANGE</span><span class="tag m">RCA</span><span class="tag m">CAPACITY</span><span class="tag m">DOCS</span></div>
+<div class="card"><span class="lv f m">LEARNING NEXT</span><h3>Automation</h3><span class="tag m">JENKINS</span><span class="tag m">ANSIBLE</span><span class="tag m">KUBERNETES</span><span class="tag m">CI/CD</span></div>
+</div>
+</section>
+
+<section id="playbook">
+<span class="m k">PLAYBOOK</span>
+<h2>My first five minutes on a P1.</h2>
+<p>A calm routine beats heroics. This is how I work an outage, on VMware, Nutanix or Windows.</p>
+<div class="steps">
+<div class="step"><h3>Scope it</h3><p>What is down, who is affected, since when, and is it one host or the whole cluster?</p></div>
+<div class="step"><h3>What changed?</h3><p>Recent patches, migrations, network or firmware changes are the usual suspects.</p></div>
+<div class="step"><h3>Read the logs</h3><p>vmkernel and hostd on ESXi, NCC and genesis on Nutanix, event logs on Windows, hardware logs in iDRAC or iLO.</p></div>
+<div class="step"><h3>Stabilize</h3><p>Fail over, vMotion away, roll back or restart the right service. Service first, theory later.</p></div>
+<div class="step"><h3>Write the RCA</h3><p>Root cause, timeline, fix and prevention, so the same page never fires twice.</p></div>
 </div>
 </section>
 
 <section id="log">
+<span class="m k">CHANGELOG</span>
 <h2>Version history. Still shipping.</h2>
 <div class="log">
-<div class="row"><span class="m">DEC 2025 — OCT 2026 · GURGAON</span><h3>VMware Cloud Engineer II</h3><div class="co">Rackspace Technology</div><ul><li>Supported and optimized VMware infrastructure for stability and performance.</li><li>Managed ESXi, vCenter and vSAN, plus patching, certificate renewals and resource optimization.</li><li>Handled VM deployment, datastore management and performance monitoring.</li></ul></div>
-<div class="row"><span class="m">NOV 2022 — DEC 2025 · PUNE</span><h3>Technical Solution Consultant, VMware Administrator</h3><div class="co">Hewlett Packard Enterprise</div><ul><li>Ran VMware environments across enterprise systems, including patching, upgrades and hardware maintenance.</li><li>Built and managed VMs from templates, clones and ISO, OVA and OVF files.</li><li>Administered Linux (RHEL, Ubuntu) and Windows Server guests, including users, access and logs.</li></ul></div>
+<div class="row now"><span class="m">DEC 2025 — OCT 2026 · GURGAON</span><h3>VMware Cloud Engineer II</h3><div class="co">Rackspace Technology</div><ul><li>Supported and optimized VMware infrastructure for stability and performance.</li><li>Managed ESXi, vCenter and vSAN, plus patching, certificate renewals and resource optimization.</li><li>Handled VM deployment, datastore management, performance monitoring and Windows Server administration.</li></ul></div>
+<div class="row"><span class="m">NOV 2022 — DEC 2025 · PUNE</span><h3>Technical Solution Consultant, VMware Administrator</h3><div class="co">Hewlett Packard Enterprise</div><ul><li>Ran VMware environments across enterprise systems, including patching, upgrades and hardware maintenance.</li><li>Built and managed VMs from templates, clones and ISO, OVA and OVF files.</li><li>Worked on HPE ProLiant servers: SPP firmware upgrades, OneView monitoring, DIMM and system board replacements, and vendor cases for root cause.</li><li>Administered Linux (RHEL, Ubuntu) and Windows Server guests, including users, access and logs.</li></ul></div>
 <div class="row"><span class="m">JAN 2017 — DEC 2021 · PRAYAGRAJ</span><h3>YouTuber and Video Producer</h3><div class="co">YouTube</div><ul><li>Planned, shot and edited 200+ technology videos.</li><li>Grew a community of 900k and used YouTube Analytics to improve retention.</li><li>Delivered sponsored campaigns with brands such as Filmora.</li></ul></div>
-<div class="row"><span class="m">EDUCATION</span><h3>Always still learning</h3><ul><li>MBA, IT and Finance, Dr. A.P.J. Abdul Kalam Technical University (2025–2026)</li><li>PG Diploma in IT Infrastructure, Systems and Security, C-DAC (2022)</li><li>B.Tech, Electrical Engineering, Dr. A.P.J. Abdul Kalam Technical University</li></ul></div>
+<div class="row"><span class="m">EDUCATION</span><h3>Always still learning</h3><ul><li>MBA, IT and Finance, Dr. A.P.J. Abdul Kalam Technical University (2025–2026)</li><li>Diploma in IT Infrastructure and System Security, C-DAC (2022)</li><li>B.Tech, Electrical Engineering, Dr. A.P.J. Abdul Kalam Technical University</li></ul></div>
 </div>
 </section>
 
 <section id="certs">
-<h2>Certifications and other signals.</h2>
+<span class="m k">SIGNALS</span>
+<h2>Certifications and awards.</h2>
 <div class="certs">
-<div class="cert"><i>VM</i><div><b>Foundational VMware NSX</b><span>Certification</span></div></div>
+<div class="cert"><i>VM</i><div><b>VMware NSX</b><span>Certification</span></div></div>
+<div class="cert"><i>NX</i><div><b>Nutanix Certified (2×)</b><span>Hyperconverged infrastructure</span></div></div>
+<div class="cert"><i>AWS</i><div><b>AWS Certified (Associate)</b><span>Cloud</span></div></div>
 <div class="cert"><i>IT</i><div><b>Event, Incident and Problem Management (ITILv4)</b><span>Certification</span></div></div>
 <div class="cert"><i>IT</i><div><b>Nutanix Certified Associate(NCA) 6.5</b><span>Certification</span></div></div>
-<div class="cert"><i>OR</i><div><b>Oracle Certified Foundations Associate</b><span>Oracle</span></div></div>
 <div class="cert"><i>DO</i><div><b>DevOps Project 2022</b><span>CI/CD with Jenkins, Ansible, Kubernetes</span></div></div>
-<div class="cert"><i>★</i><div><b>Best Performance Award FY24</b><span>Recognition</span></div></div>
+<div class="cert"><i>★</i><div><b>Best Performance Award FY24</b><span>Hewlett Packard Enterprise</span></div></div>
 <div class="cert"><i>YT</i><div><b>YouTube Silver Button</b><span>Creator award</span></div></div>
 </div>
 </section>
 </main>
 
 <div class="contact" id="contact"><div class="wrap">
-<span class="chip m">OPEN TO ROLES · IMMEDIATE JOINER</span>
-<h2 style="margin-top:18px">Need a VMware engineer who picks up the pager?</h2>
-<p style="color:var(--mute);max-width:560px">Have a cluster to look after, a migration to plan or a role to fill? My inbox is open.</p>
+<span class="chip m"><span class="dot"></span>OPEN TO ROLES · IMMEDIATE JOINER</span>
+<h2 style="margin-top:18px">Need a VMware and Nutanix engineer who picks up the pager?</h2>
+<p style="color:var(--mute);max-width:580px">Have a cluster to look after, a migration to plan or a role to fill? My inbox is open.</p>
 <a class="mail" href="mailto:raziabbasrizvi75@gmail.com">raziabbasrizvi75@gmail.com</a>
-<div class="links"><a class="btn p" href="https://www.linkedin.com/in/razi-abbas-a7b3401b1/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTQPQcfvRRtSzRocB3oDBLQ%3D%3D1" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="tel:+919554088700">+91 95540 88700</a></div>
+<div class="links"><a class="btn p" href="https://www.linkedin.com/in/razi-abbasa7b3401b1" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="tel:+919554088700">+91 95540 88700</a></div>
 </div></div>
 
 <footer class="m"><div class="wrap"><span>Razi Abbas · Prayagraj, India</span><a href="#top">Back to top ↑</a><span>© 2026</span></div></footer>
