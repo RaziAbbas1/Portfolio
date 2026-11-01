@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Razi Abbas — VMware Engineer, professionally uptime-obsessed</title>
+<meta name="description" content="Razi Abbas — VMware System Administrator and Wintel Engineer with 4 years of experience in vSphere, vSAN, NSX and Nutanix.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#0f1512;--bg2:#161e1a;--ink:#e9f0e7;--mute:#93a39a;--line:#26332c;--acc:#9be58a;--hot:#f2b85b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark}}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f6f1;--bg2:#e6ece3;--ink:#16211b;--mute:#566a5e;--line:#cdd9cb;--acc:#1d7a3a;--hot:#a8620a}}
+:root[data-theme="dark"]{color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Bricolage Grotesque",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+.m{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.02em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{font-weight:800;font-size:18px}nav b i{color:var(--acc);font-style:normal}
+nav div a{margin-left:18px;text-decoration:none;color:var(--mute);font-size:15px}
+nav div a:hover{color:var(--acc)}
+@media(max-width:560px){nav div a:not(.hi){display:none}}
+.hero{padding:64px 0 48px}
+.chip{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:99px;padding:5px 12px;color:var(--mute)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--acc);animation:p 2s infinite}
+@keyframes p{50%{opacity:.25}}
+h1{font-size:clamp(44px,9vw,92px);line-height:.98;letter-spacing:-.035em;font-weight:800;margin:22px 0 18px}
+h1 em{font-style:normal;color:var(--acc)}
+.lead{max-width:560px;color:var(--mute);font-size:19px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.btn{padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line)}
+.btn.p{background:var(--acc);color:#0f1512;border-color:var(--acc)}
+.panel{margin-top:40px;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.panel header{display:flex;justify-content:space-between;color:var(--mute);margin-bottom:12px;gap:10px;flex-wrap:wrap}
+.hosts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.host{border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--bg)}
+.host span{display:block;color:var(--mute)}
+.host strong{color:var(--acc);font-weight:500}
+.bar{height:5px;border-radius:3px;background:var(--line);margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc);border-radius:3px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:14px}
+.stat{padding:12px 0;border-top:2px solid var(--acc)}
+.stat b{display:block;font-size:34px;line-height:1.1;letter-spacing:-.02em}
+.tick{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:12px 0;color:var(--mute)}
+.tick div{display:inline-block;animation:t 28s linear infinite}
+.tick span{margin:0 18px}.tick span:nth-child(even){color:var(--hot)}
+@keyframes t{to{transform:translateX(-50%)}}
+section{padding:72px 0 8px}
+h2{font-size:clamp(32px,6vw,52px);line-height:1.05;letter-spacing:-.03em;margin:8px 0 14px}
+h2+p{color:var(--mute);max-width:560px;margin-top:0}
+.about{display:grid;gap:30px;grid-template-columns:1fr}
+@media(min-width:800px){.about{grid-template-columns:1.2fr .8fr}}
+blockquote{margin:0;padding:18px 20px;border-left:3px solid var(--hot);background:var(--bg2);border-radius:0 12px 12px 0;font-size:20px;line-height:1.35}
+blockquote small{display:block;margin-top:10px;color:var(--mute)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:26px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:6px 0 8px;font-size:22px;line-height:1.2}
+.card p{margin:0 0 14px;color:var(--mute);font-size:16px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:2px 8px;margin:0 6px 6px 0;color:var(--mute)}
+.card .k{color:var(--hot)}
+.log{margin-top:26px;border-left:2px solid var(--line);padding-left:22px}
+.row{position:relative;padding-bottom:30px}
+.row:before{content:"";position:absolute;left:-29px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--acc)}
+.row.now:before{background:var(--acc)}
+.row h3{margin:2px 0;font-size:23px}
+.row .co{color:var(--hot)}
+.row ul{margin:10px 0;padding-left:18px;color:var(--mute);font-size:16px}
+.row li{margin-bottom:4px}
+.certs{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:24px}
+.cert{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--bg2)}
+.cert i{flex:none;width:38px;height:38px;border-radius:9px;background:var(--acc);color:#0f1512;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:13px}
+.cert b{display:block;line-height:1.25}.cert span{color:var(--mute)}
+.contact{margin:72px 0 0;padding:64px 0;border-top:1px solid var(--line);text-align:left}
+.mail{display:inline-block;font-size:clamp(20px,4.6vw,38px);font-weight:800;letter-spacing:-.02em;color:var(--acc);text-decoration:none;word-break:break-all;border-bottom:2px solid var(--acc)}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+:focus-visible{outline:2px solid var(--hot);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.tick div,.dot{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b id="top">razi<i>.</i>abbas</b><div class="m"><a href="#about">About</a><a href="#work">Field notes</a><a href="#stack">Toolbox</a><a href="#log">Changelog</a><a class="hi" href="#contact" style="color:var(--acc)">Say hello</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="chip m"><span class="dot"></span>STATUS: IMMEDIATE JOINER</span>
+<h1>I keep your virtual machines <em>up.</em></h1>
+<p class="lead">VMware System Administrator and Wintel Engineer. I look after the hypervisors, clusters and storage that your applications quietly depend on, so nobody has to think about them.</p>
+<div class="btns"><a class="btn p" href="#contact">Let’s talk</a><a class="btn" href="#work">See the field notes</a></div>
+
+<div class="panel">
+<header class="m"><span>CLUSTER / PRAYAGRAJ-DC01</span><span style="color:var(--acc)">HA ON · DRS ON · ALL HOSTS NOMINAL</span></header>
+<div class="hosts m">
+<div class="host"><span>esxi-01</span><strong>CONNECTED</strong><div class="bar"><i style="width:62%"></i></div></div>
+<div class="host"><span>esxi-02</span><strong>CONNECTED</strong><div class="bar"><i style="width:48%"></i></div></div>
+<div class="host"><span>esxi-03</span><strong>CONNECTED</strong><div class="bar"><i style="width:71%"></i></div></div>
+<div class="host"><span>vSAN</span><strong>HEALTHY</strong><div class="bar"><i style="width:55%"></i></div></div>
+</div>
+<div class="stats">
+<div class="stat"><b>4 yrs</b>of VMware and Wintel work</div>
+<div class="stat"><b>900k</b>YouTube community I grew</div>
+<div class="stat"><b>200+</b>videos planned, shot and edited</div>
+</div>
+</div>
+</div></header>
+
+<div class="tick m" aria-hidden="true"><div><span>VSPHERE</span><span>ESXI</span><span>VCENTER</span><span>VSAN</span><span>NSX</span><span>NUTANIX</span><span>WINDOWS SERVER</span><span>LINUX</span><span>ITILV4</span><span>VSPHERE</span><span>ESXI</span><span>VCENTER</span><span>VSAN</span><span>NSX</span><span>NUTANIX</span><span>WINDOWS SERVER</span><span>LINUX</span><span>ITILV4</span></div></div>
+
+<main class="wrap">
+<section id="about">
+<div class="about">
+<div>
+<h2>Steady systems. Curious human.</h2>
+<p>I’m Razi, a VMware engineer based in Prayagraj. Most recently I was a VMware Cloud Engineer II at Rackspace Technology, and before that I spent just over three years at Hewlett Packard Enterprise as a Technical Solution Consultant.</p>
+<p>My days are ESXi hosts, vCenter, vSAN, patching, certificates and the occasional P1 incident. I like environments that are secure, documented and boring in the best way.</p>
+<p>I’m also finishing an MBA in IT and Finance, because good infrastructure decisions are business decisions too. And yes, I ran a tech YouTube channel for five years, so I can explain a datastore to a non-engineer without them glazing over.</p>
+</div>
+<blockquote>Snapshots are not backups.<small class="m">— EVERY VMWARE ADMIN, EVENTUALLY</small></blockquote>
+</div>
+</section>
+
+<section id="work">
+<h2>What I handle day to day.</h2>
+<p>Real work from my time at Hewlett Packard Enterprise. No invented uptime numbers.</p>
+<div class="grid">
+<article class="card"><span class="tag m k">PATCHING</span><h3>Patches without panic.</h3><p>ESXi and vCenter patching, upgrades, certificate renewals and snapshot management, planned so the cluster stays secure and stable.</p><span class="tag m">ESXI</span><span class="tag m">VCENTER</span><span class="tag m">CERTS</span></article>
+<article class="card"><span class="tag m k">MIGRATION</span><h3>Moving workloads safely.</h3><p>P2V and V2V migrations with VMware Converter, hot and cold vMotion, and storage migrations across VMFS datastores.</p><span class="tag m">VMOTION</span><span class="tag m">CONVERTER</span><span class="tag m">VMFS</span></article>
+<article class="card"><span class="tag m k">AVAILABILITY</span><h3>Clusters that fail gracefully.</h3><p>HA and DRS clusters, affinity and anti-affinity rules, disaster recovery configuration, and vSAN stretched cluster and ROBO setups.</p><span class="tag m">HA</span><span class="tag m">DRS</span><span class="tag m">VSAN</span></article>
+<article class="card"><span class="tag m k">INCIDENTS</span><h3>P1, handled calmly.</h3><p>Worked P1 incidents with cross-functional teams, troubleshooting snapshot, performance, network, storage and guest OS issues, then recommending fixes.</p><span class="tag m">TRIAGE</span><span class="tag m">RCA</span><span class="tag m">ITILV4</span></article>
+</div>
+</section>
+
+<section id="stack">
+<h2>Tools I reach for.</h2>
+<p>The tool matters less than knowing what to check first when it misbehaves.</p>
+<div class="grid">
+<div class="card"><h3>Virtualization</h3><span class="tag m">VSPHERE</span><span class="tag m">ESXI</span><span class="tag m">VCENTER</span><span class="tag m">VSAN</span><span class="tag m">NSX</span><span class="tag m">NUTANIX</span></div>
+<div class="card"><h3>Operating systems</h3><span class="tag m">WINDOWS SERVER</span><span class="tag m">RHEL</span><span class="tag m">UBUNTU</span><span class="tag m">AD ROLES &amp; PERMISSIONS</span></div>
+<div class="card"><h3>Operations</h3><span class="tag m">PERFORMANCE MONITORING</span><span class="tag m">SECURITY HARDENING</span><span class="tag m">INCIDENT MGMT</span><span class="tag m">ITILV4</span></div>
+<div class="card"><h3>Learning next</h3><span class="tag m">JENKINS</span><span class="tag m">ANSIBLE</span><span class="tag m">KUBERNETES</span><span class="tag m">CI/CD</span></div>
+</div>
+</section>
+
+<section id="log">
+<h2>Version history. Still shipping.</h2>
+<div class="log">
+<div class="row"><span class="m">DEC 2025 — OCT 2026 · GURGAON</span><h3>VMware Cloud Engineer II</h3><div class="co">Rackspace Technology</div><ul><li>Supported and optimized VMware infrastructure for stability and performance.</li><li>Managed ESXi, vCenter and vSAN, plus patching, certificate renewals and resource optimization.</li><li>Handled VM deployment, datastore management and performance monitoring.</li></ul></div>
+<div class="row"><span class="m">NOV 2022 — DEC 2025 · PUNE</span><h3>Technical Solution Consultant, VMware Administrator</h3><div class="co">Hewlett Packard Enterprise</div><ul><li>Ran VMware environments across enterprise systems, including patching, upgrades and hardware maintenance.</li><li>Built and managed VMs from templates, clones and ISO, OVA and OVF files.</li><li>Administered Linux (RHEL, Ubuntu) and Windows Server guests, including users, access and logs.</li></ul></div>
+<div class="row"><span class="m">JAN 2017 — DEC 2021 · PRAYAGRAJ</span><h3>YouTuber and Video Producer</h3><div class="co">YouTube</div><ul><li>Planned, shot and edited 200+ technology videos.</li><li>Grew a community of 900k and used YouTube Analytics to improve retention.</li><li>Delivered sponsored campaigns with brands such as Filmora.</li></ul></div>
+<div class="row"><span class="m">EDUCATION</span><h3>Always still learning</h3><ul><li>MBA, IT and Finance, Dr. A.P.J. Abdul Kalam Technical University (2025–2026)</li><li>PG Diploma in IT Infrastructure, Systems and Security, C-DAC (2022)</li><li>B.Tech, Electrical Engineering, Dr. A.P.J. Abdul Kalam Technical University</li></ul></div>
+</div>
+</section>
+
+<section id="certs">
+<h2>Certifications and other signals.</h2>
+<div class="certs">
+<div class="cert"><i>VM</i><div><b>VMware NSX</b><span>Certification</span></div></div>
+<div class="cert"><i>IT</i><div><b>Event, Incident and Problem Management</b><span>Certification</span></div></div>
+<div class="cert"><i>OR</i><div><b>Oracle Certified Foundations Associate</b><span>Oracle</span></div></div>
+<div class="cert"><i>DO</i><div><b>DevOps Project 2022</b><span>CI/CD with Jenkins, Ansible, Kubernetes</span></div></div>
+<div class="cert"><i>★</i><div><b>Best Performance Award FY24</b><span>Recognition</span></div></div>
+<div class="cert"><i>YT</i><div><b>YouTube Silver Button</b><span>Creator award</span></div></div>
+</div>
+</section>
+</main>
+
+<div class="contact" id="contact"><div class="wrap">
+<span class="chip m">OPEN TO ROLES · IMMEDIATE JOINER</span>
+<h2 style="margin-top:18px">Need a VMware engineer who picks up the pager?</h2>
+<p style="color:var(--mute);max-width:560px">Have a cluster to look after, a migration to plan or a role to fill? My inbox is open.</p>
+<a class="mail" href="mailto:raziabbasrizvi75@gmail.com">raziabbasrizvi75@gmail.com</a>
+<div class="links"><a class="btn p" href="https://www.linkedin.com/in/razi-abbasa7b3401b1" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="tel:+919554088700">+91 95540 88700</a></div>
+</div></div>
+
+<footer class="m"><div class="wrap"><span>Razi Abbas · Prayagraj, India</span><a href="#top">Back to top ↑</a><span>© 2026</span></div></footer>
+</body>
+</html>
